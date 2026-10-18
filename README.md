@@ -23,6 +23,13 @@ npm run build
 Angular genera la web estática en `dist/pintura-landing/browser`, lista para
 publicar en un servicio de hosting estático como Cloudflare Pages.
 
+### Railway
+
+El proyecto incluye un `Dockerfile` que construye Angular y sirve el resultado
+con Nginx. En Railway, selecciona el repositorio y deja que detecte el
+`Dockerfile` de la raíz; no configures `browser` como directorio de publicación.
+Railway proporciona el puerto mediante la variable `PORT`.
+
 ## Formulario de contacto
 
 El formulario está maquetado y validado en el navegador, pero aún no envía
