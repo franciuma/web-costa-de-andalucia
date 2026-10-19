@@ -1,7 +1,8 @@
 # Costa de Andalucía Proyectos
 
 Web de Costa de Andalucía Proyectos S.L., empresa de reformas, pladur y pintura
-para proyectos residenciales y comerciales en Andalucía.
+para proyectos residenciales y comerciales en Andalucía. La interfaz está
+implementada con Angular y SCSS.
 
 ## Desarrollo
 

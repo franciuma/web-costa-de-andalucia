@@ -1,8 +1,11 @@
 <header class="site-header">
   <nav class="navigation shell" aria-label="Navegación principal">
     <a class="brand" href="#inicio" aria-label="Costa de Andalucía Proyectos, inicio">
-      <img class="brand-logo" src="/costadeandalucia-logo.jpg" alt="">
-      <span class="brand-name">Costa de Andalucía<span>Proyectos</span></span>
+      <img src="/costadeandalucia-logo.jpg" alt="" width="56" height="56" />
+      <span class="brand-copy">
+        Costa de Andalucía
+        <span>Proyectos</span>
+      </span>
     </a>
 
     <button
@@ -19,259 +22,256 @@
 
     <div class="nav-links" id="main-menu" [class.is-open]="menuOpen()">
       <a href="#servicios" (click)="closeMenu()">Servicios</a>
-      <a href="#trabajos" (click)="closeMenu()">Trabajos</a>
-      <a href="#proceso" (click)="closeMenu()">Cómo trabajamos</a>
-      <a class="button button-small" href="#contacto" (click)="closeMenu()">Pide presupuesto</a>
+      <a href="#trabajos" (click)="closeMenu()">Proyecto</a>
+      <a href="#proceso" (click)="closeMenu()">El proceso</a>
+      <a class="nav-cta" href="#contacto" (click)="closeMenu()">Contacto</a>
     </div>
   </nav>
 </header>
 
 <main>
-  <section class="hero shell" id="inicio" aria-labelledby="hero-title">
+  <section class="hero" id="inicio" aria-labelledby="hero-title">
     <div class="hero-copy">
-      <p class="eyebrow"><span class="eyebrow-line"></span> Reformas · Pladur · Pintura</p>
-      <h1 id="hero-title">Del primer plano al último acabado.</h1>
-      <p class="hero-description">
-        Renovamos viviendas y locales en Andalucía, cuidando cada fase para que el espacio
-        funcione como lo imaginas.
-      </p>
+      <p class="eyebrow"><span></span> Viviendas y locales</p>
+      <h1 id="hero-title">Reformas, pladur y pintura en Andalucía.</h1>
+      <p class="hero-description">Reformas en viviendas y locales: pladur, pintura, papel pintado y molduras.</p>
       <div class="hero-actions">
-        <a class="button" href="#contacto">Cuéntanos tu proyecto</a>
-        <a class="text-link" href="#servicios">Descubre los servicios <span aria-hidden="true">↘</span></a>
+        <a class="button button-gold" href="#contacto">
+          Contactar
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M4 10h12m-5-5 5 5-5 5" />
+          </svg>
+        </a>
+        <a class="text-link" href="#trabajos">Ver un proyecto</a>
       </div>
-      <div class="hero-note">
-        <span class="note-dot" aria-hidden="true"></span>
-        <span>Proyectos residenciales y comerciales</span>
-      </div>
+      <p class="hero-context">
+        <span aria-hidden="true"></span>
+        Viviendas y espacios comerciales
+      </p>
     </div>
 
-    <div class="hero-visual">
+    <a
+      class="hero-image"
+      href="https://www.instagram.com/costadeandaluciaproyectos/p/DdRCPVsOfab/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Ver esta publicación en Instagram"
+    >
       <img
-        class="hero-image"
-        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=85"
-        alt="Salón luminoso con acabados contemporáneos"
+        src="/instagram-publicacion-2026-09-14.jpg"
+        alt="Taladro amarillo preparado para trabajar sobre una pared"
+        width="640"
+        height="640"
         fetchpriority="high"
-      >
-      <div class="image-caption">
-        <span class="caption-mark" aria-hidden="true">↗</span>
-        <span>Un espacio pensado para vivirlo.</span>
-      </div>
-      <div class="image-index" aria-hidden="true">Andalucía</div>
-    </div>
+      />
+      <span class="image-note">
+        <span class="image-note-icon" aria-hidden="true">
+          <svg viewBox="0 0 20 20" fill="none">
+            <path d="M5 15 15 5M6 5h9v9" />
+          </svg>
+        </span>
+        Herramientas en obra
+      </span>
+      <span class="image-credit">Costa de Andalucía · Instagram</span>
+    </a>
   </section>
 
-  <section class="intro-band" aria-label="Ámbito de trabajo">
-    <div class="shell intro-inner">
-      <p>Un solo equipo para dar forma al proyecto completo.</p>
-      <span>Vivienda <i></i> Comercio <i></i> Andalucía</span>
+  <div class="scope-strip" aria-label="Ámbito de los proyectos">
+    <div class="shell scope-inner">
+      <span>Residencial</span>
+      <span>Comercial</span>
+      <span>Andalucía</span>
     </div>
-  </section>
+  </div>
 
   <section class="services section shell" id="servicios" aria-labelledby="services-title">
-    <div class="section-heading">
-      <div>
-        <p class="eyebrow"><span class="eyebrow-line"></span> Lo que hacemos</p>
-        <h2 id="services-title">Cada oficio, en su momento.</h2>
-      </div>
-      <p class="section-intro">
-        Coordinamos los trabajos necesarios para que cada decisión y cada acabado encajen.
-      </p>
+    <div class="section-intro">
+      <p class="eyebrow"><span></span> Viviendas y locales</p>
+      <h2 id="services-title">Nuestros servicios.</h2>
+      <p>También instalamos papel pintado y molduras decorativas.</p>
     </div>
 
     <div class="service-list">
       <article class="service-item">
-        <span class="service-symbol" aria-hidden="true">
+        <span class="service-icon" aria-hidden="true">
           <svg viewBox="0 0 48 48" fill="none">
-            <path d="M7 21.5 24 8l17 13.5M12 19v21h24V19M20 40V27h8v13" />
+            <path d="M6 21 24 7l18 14M11 18v23h26V18M20 41V27h8v14" />
           </svg>
         </span>
-        <div>
+        <div class="service-copy">
           <h3>Reformas</h3>
-          <p>Renovación de viviendas y espacios comerciales, de la distribución a los últimos detalles.</p>
+          <p>Reforma de viviendas y locales, desde la preparación hasta los acabados.</p>
         </div>
-        <a class="service-link" href="#contacto" aria-label="Consultar sobre reformas">↗</a>
+        <a href="#contacto" class="service-action" aria-label="Consultar por una reforma">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M4 10h12m-5-5 5 5-5 5" />
+          </svg>
+        </a>
       </article>
 
       <article class="service-item">
-        <span class="service-symbol" aria-hidden="true">
+        <span class="service-icon" aria-hidden="true">
           <svg viewBox="0 0 48 48" fill="none">
-            <path d="M8 39h32M12 39V12h24v27M18 12V7h12v5M18 21h12M18 28h12" />
+            <path d="M9 40h30M13 40V12h22v28M19 12V7h10v5M18 21h12M18 28h12" />
           </svg>
         </span>
-        <div>
+        <div class="service-copy">
           <h3>Pladur</h3>
-          <p>Tabiques, techos y soluciones a medida para transformar y aprovechar cada estancia.</p>
+          <p>Instalación de tabiques y techos de pladur.</p>
         </div>
-        <a class="service-link" href="#contacto" aria-label="Consultar sobre pladur">↗</a>
+        <a href="#contacto" class="service-action" aria-label="Consultar por trabajos de pladur">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M4 10h12m-5-5 5 5-5 5" />
+          </svg>
+        </a>
       </article>
 
       <article class="service-item">
-        <span class="service-symbol" aria-hidden="true">
+        <span class="service-icon" aria-hidden="true">
           <svg viewBox="0 0 48 48" fill="none">
-            <path d="M11 37V11h26v26H11ZM17 17h14v14H17zM5 42h38M24 6v5" />
+            <path d="M10 38V10h28v28H10ZM17 17h14v14H17zM5 43h38" />
           </svg>
         </span>
-        <div>
-          <h3>Pintura</h3>
-          <p>Interiores, fachadas y locales con superficies bien preparadas y acabados cuidados.</p>
+        <div class="service-copy">
+          <h3>Pintura y acabados</h3>
+          <p>Preparación de superficies, pintura, papel pintado y molduras.</p>
         </div>
-        <a class="service-link" href="#contacto" aria-label="Consultar sobre pintura">↗</a>
+        <a href="#contacto" class="service-action" aria-label="Consultar por pintura y acabados">
+          <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M4 10h12m-5-5 5 5-5 5" />
+          </svg>
+        </a>
       </article>
     </div>
   </section>
 
-  <section class="spaces section" id="trabajos" aria-labelledby="spaces-title">
+  <section class="project section" id="trabajos" aria-labelledby="project-title">
     <div class="shell">
-      <div class="spaces-heading">
-        <p class="eyebrow"><span class="eyebrow-line"></span> Desde Instagram</p>
-        <h2 id="spaces-title">El trabajo, tal como lo compartimos.</h2>
-        <p>Una transformación reciente y una muestra de cómo cuidamos cada proyecto, directamente desde nuestro perfil.</p>
-        <a class="text-link instagram-link" href="https://www.instagram.com/costadeandaluciaproyectos/" target="_blank" rel="noopener noreferrer">
-          Ver perfil de Instagram <span aria-hidden="true">↗</span>
-        </a>
+      <div class="project-heading">
+        <p class="eyebrow"><span></span> Proyecto</p>
+        <p>Pasillo · septiembre 2026</p>
       </div>
+      <article class="project-feature">
+        <a
+          class="project-image"
+          href="https://www.instagram.com/costadeandaluciaproyectos/p/DdvsZ8LDlSg/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Ver en Instagram el reel de la reforma del pasillo"
+        >
+          <img
+            src="/instagram-publicacion-2026-09-26.jpg"
+            alt="Pasillo renovado con paredes revestidas, molduras blancas y suelo de mármol"
+            width="480"
+            height="640"
+            loading="lazy"
+          />
+        </a>
 
-      <div class="spaces-grid">
-        <article class="space-card space-home">
+        <div class="project-copy">
+          <p class="project-date">26 septiembre 2026 <span>Reel en Instagram</span></p>
+          <h2 id="project-title">Reforma de un pasillo.</h2>
+          <p class="project-description">
+            Trabajos realizados: pintura, papel pintado, molduras y panelados decorativos.
+          </p>
+          <ul class="finish-list" aria-label="Trabajos incluidos">
+            <li>Preparación y pintura de paramentos</li>
+            <li>Papel pintado</li>
+            <li>Molduras y panelados decorativos</li>
+            <li>Remates finales</li>
+          </ul>
           <a
-            class="post-image-link"
+            class="project-link"
             href="https://www.instagram.com/costadeandaluciaproyectos/p/DdvsZ8LDlSg/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Ver en Instagram la transformación del pasillo"
           >
-            <img
-              src="/instagram-publicacion-2026-09-26.jpg"
-              alt="Pasillo renovado con molduras blancas, papel pintado y suelo de mármol"
-              loading="lazy"
-            >
-            <span class="post-play" aria-hidden="true">▶</span>
+            Ver el proyecto en Instagram
+            <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M5 15 15 5M6 5h9v9" />
+            </svg>
           </a>
-          <div class="post-caption">
-            <p class="post-date">26 septiembre 2026 <span>Reel</span></p>
-            <h3>Un pasillo, renovado de principio a fin.</h3>
-            <p>Preparación y pintura, papel pintado, molduras y panelados decorativos. Cada remate cuenta en el resultado.</p>
-            <a href="https://www.instagram.com/costadeandaluciaproyectos/p/DdvsZ8LDlSg/" target="_blank" rel="noopener noreferrer">
-              Ver transformación en Instagram <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </article>
-        <article class="space-card space-business">
-          <a
-            class="post-image-link"
-            href="https://www.instagram.com/costadeandaluciaproyectos/p/DdRCPVsOfab/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Ver en Instagram la publicación de presentación"
-          >
-            <img
-              src="/instagram-publicacion-2026-09-14.jpg"
-              alt="Herramienta de trabajo del equipo en una obra"
-              loading="lazy"
-            >
-          </a>
-          <div class="post-caption">
-            <p class="post-date">14 septiembre 2026 <span>Presentación</span></p>
-            <h3>Reformas, pladur y todo tipo de acabados.</h3>
-            <p>“Proyectos cuidados desde la preparación hasta el último acabado.” Así presentamos nuestra forma de trabajar.</p>
-            <a href="https://www.instagram.com/costadeandaluciaproyectos/p/DdRCPVsOfab/" target="_blank" rel="noopener noreferrer">
-              Ver publicación en Instagram <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </article>
-      </div>
+        </div>
+      </article>
     </div>
   </section>
 
   <section class="process section" id="proceso" aria-labelledby="process-title">
     <div class="shell process-layout">
       <div class="process-heading">
-        <p class="eyebrow"><span class="eyebrow-line"></span> El proyecto, paso a paso</p>
-        <h2 id="process-title">Claridad desde el principio.</h2>
-        <p>Un buen resultado empieza por entender bien qué necesitas.</p>
-        <a class="text-link text-link-light" href="#contacto">Hablemos de tu proyecto <span aria-hidden="true">↘</span></a>
+        <p class="eyebrow"><span></span> Fases del trabajo</p>
+        <h2 id="process-title">Preparación, coordinación y acabados.</h2>
+        <p>Preparamos las superficies, coordinamos los oficios y revisamos los acabados.</p>
       </div>
-      <ol class="process-list">
+      <ol class="process-steps">
         <li>
-          <span class="process-number">01</span>
+          <span class="step-number">01</span>
           <div>
-            <h3>Nos cuentas la idea</h3>
-            <p>Vemos contigo el espacio, las prioridades y el alcance de los trabajos.</p>
+            <h3>Preparar superficies</h3>
+            <p>Revisar el espacio y dejar las superficies listas para trabajar.</p>
           </div>
         </li>
         <li>
-          <span class="process-number">02</span>
+          <span class="step-number">02</span>
           <div>
-            <h3>Definimos el proyecto</h3>
-            <p>Ordenamos las fases para que oficios, materiales y tiempos tengan sentido.</p>
+            <h3>Coordinar oficios</h3>
+            <p>Organizar los trabajos de reforma, pladur, pintura y decoración.</p>
           </div>
         </li>
         <li>
-          <span class="process-number">03</span>
+          <span class="step-number">03</span>
           <div>
-            <h3>Lo llevamos a cabo</h3>
-            <p>Ejecutamos los trabajos acordados y cuidamos los acabados hasta el final.</p>
+            <h3>Revisar acabados</h3>
+            <p>Comprobar los remates y encuentros al terminar los trabajos.</p>
           </div>
         </li>
       </ol>
     </div>
   </section>
 
-  <section class="contact section shell" id="contacto" aria-labelledby="contact-title">
-    <div class="contact-copy">
-      <p class="eyebrow"><span class="eyebrow-line"></span> Hablemos</p>
-      <h2 id="contact-title">¿Qué espacio tienes en mente?</h2>
-      <p>Cuéntanos qué quieres reformar y prepararemos el siguiente paso contigo.</p>
-      <span class="contact-region">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
-          <circle cx="12" cy="10" r="2.5" />
-        </svg>
-        Andalucía
-      </span>
-    </div>
-
-    <form class="contact-form" (ngSubmit)="onSubmit()" #contactForm="ngForm">
-      <div class="form-row">
-        <label>
-          Tu nombre
-          <input type="text" name="nombre" autocomplete="name" required [(ngModel)]="formData.nombre">
-        </label>
-        <label>
-          Teléfono
-          <input type="tel" name="telefono" autocomplete="tel" required [(ngModel)]="formData.telefono">
-        </label>
+  <section class="contact section" id="contacto" aria-labelledby="contact-title">
+    <div class="shell contact-layout">
+      <div>
+        <p class="eyebrow"><span></span> Contacto</p>
+        <h2 id="contact-title">¿Qué te gustaría transformar?</h2>
       </div>
-      <label>
-        ¿Qué necesitas?
-        <select name="servicio" required [(ngModel)]="formData.servicio">
-          <option value="" disabled>Elige el tipo de proyecto</option>
-          <option value="reforma">Reforma</option>
-          <option value="pladur">Pladur</option>
-          <option value="pintura">Pintura</option>
-          <option value="otro">Otro proyecto</option>
-        </select>
-      </label>
-      <label>
-        Cuéntanos un poco más
-        <textarea name="mensaje" rows="3" [(ngModel)]="formData.mensaje"></textarea>
-      </label>
-      <button class="button form-submit" type="submit" [disabled]="contactForm.invalid">
-        Preparar consulta <span aria-hidden="true">↗</span>
-      </button>
-      <p class="form-status" aria-live="polite">{{ formStatus() }}</p>
-    </form>
+      <div class="contact-action">
+        <p>
+          Escríbenos por Instagram e indica si es una vivienda o un local y qué trabajos necesitas.
+        </p>
+        <a
+          class="button button-dark"
+          href="https://www.instagram.com/costadeandaluciaproyectos/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle class="instagram-dot" cx="17.5" cy="6.5" r=".8" />
+          </svg>
+          Contactar por Instagram
+          <svg class="button-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+            <path d="M5 15 15 5M6 5h9v9" />
+          </svg>
+        </a>
+        <span class="instagram-handle">@costadeandaluciaproyectos</span>
+      </div>
+    </div>
   </section>
 </main>
 
 <footer class="site-footer">
   <div class="shell footer-main">
-    <a class="brand brand-footer" href="#inicio">
-      <img class="brand-logo" src="/costadeandalucia-logo.jpg" alt="">
-      <span class="brand-name">Costa de Andalucía<span>Proyectos</span></span>
+    <a class="brand brand-footer" href="#inicio" aria-label="Costa de Andalucía Proyectos, inicio">
+      <img src="/costadeandalucia-logo.jpg" alt="" width="48" height="48" loading="lazy" />
+      <span class="brand-copy">
+        Costa de Andalucía
+        <span>Proyectos</span>
+      </span>
     </a>
-    <p>Reformas, pladur y pintura para viviendas y espacios comerciales en Andalucía.</p>
-    <a class="footer-top" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a>
+    <p>Reformas, pladur y pintura en viviendas y locales de Andalucía.</p>
+    <a class="footer-top" href="#inicio">Volver al inicio <span aria-hidden="true">↑</span></a>
   </div>
   <div class="shell footer-bottom">
     <span>Costa de Andalucía Proyectos S.L.</span>
